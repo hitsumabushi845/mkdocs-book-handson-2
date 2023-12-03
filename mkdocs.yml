@@ -1,0 +1,18 @@
+site_name: Material Blog
+site_description: Handson Blog for Material for MkDocs
+site_url: https://example.com/
+
+theme:
+  name: material
+  language: ja
+
+plugins:
+  - blog:
+      blog_dir: .
+  - search
+  - rss:
+      match_path: docs/posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
